@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+nav {
+    display: flex;
+    padding: .8rem;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 400;
+    color: black;
+    letter-spacing: .2rem;
+    padding: .5rem;
+}
+
+.logo strong {
+    letter-spacing: .2rem;
+    padding: .8rem;
+}
+
+ul {
+    display: none;
+    align-items: center;
+}
+
+ul li a {
+    cursor: pointer;
+    margin: 1rem;
+    letter-spacing: .2rem;
+    color: black;
+    padding: .5rem;
+}
+
+ul li a:hover {
+    background-color: lightgray;
+}
+
+
+
+.hero {
+    background: url("architect.jpg") center no-repeat;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-heading strong {
+    letter-spacing: .2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1.1rem;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.hero-heading {
+    color: white;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.project-heading {
+    font-weight: 400;
+    color: black;
+    margin: 5rem 1rem;
+}
+
+.project-img {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto;
+    gap: 1rem 1rem;
+    padding: 1rem;
+    
+}
+
+.container-house {
+    position: relative;
+    
+}
+
+.project-img div h2 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    top: 0;
+    
+}
+
+.project-img div img {
+        width: 100%;
+       
+}
+
+.about-heading {
+    padding: 2rem;
+}
+
+.about-heading h2 {
+    font-weight: 100;
+}
+
+.about-heading p {
+    padding: 2rem 0;
+    font-weight: 100;
+}
+
+.closure-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.closure-img{
+    width: 100%;
+}
+
+.items {
+    margin: 2rem;
+}
+.items h2 {
+    font-weight: 100;
+    padding: .5rem 0;
+}
+
+.items h3 {
+    padding: .5rem 0;
+    font-weight: lighter;
+}
+.items p {
+    font-weight: 100;
+    margin: .5rem 0;
+}
+
+.items a {
+    background-color: rgba(119, 136, 153, .1);
+    color: black;
+    text-align: center;
+    display: block;
+    padding: .6rem 0;
+}
+.items a:hover {
+    background-color: rgb(134, 150, 166);
+}
+
+.contact-heading h2, p{
+    margin: 2rem 0 0 2rem;
+    font-weight: lighter;
+}
+
+form input {
+    margin: 1rem 0 0 2rem;
+    width: 95%;
+    height: 8vh;
+}
+
+form button {
+    margin: 1rem 0 0 2rem;
+    padding: .5rem;
+    color: white;
+    background-color: black;
+}
+
+.footer-img img {
+    height: 100vh;
+    width: 90%;
+    margin: 2rem 0 0 2rem;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+@media screen and (min-width: 600px) {
+    ul {
+        display: flex;
+    }
+    .project-img {
+        grid-template-columns: auto auto auto auto; 
+    }
+    .closure-container {
+        flex-wrap: nowrap;
+    }
+}
